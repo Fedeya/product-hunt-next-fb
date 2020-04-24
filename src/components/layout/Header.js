@@ -39,7 +39,12 @@ export default function Header() {
       `}
     >
       <Nav>
-        <div>
+        <div
+          css={css`
+            display: flex;
+            align-items: center;
+          `}
+        >
           <Link href="/">
             <Logo>P</Logo>
           </Link>
@@ -67,10 +72,10 @@ export default function Header() {
               </>
             ) : (
               <>
-                <Link href="/">
+                <Link href="/login">
                   <Button bgColor>Login</Button>
                 </Link>
-                <Link href="/">
+                <Link href="/create-account">
                   <Button>Create Account</Button>
                 </Link>
               </>
